@@ -24,11 +24,13 @@ module.exports = [{
       }),
       new CopyPlugin([   //some files has to be under public
         { from: '*.html', to: '' },
+        { from: '*.xml', to: '' },
+        { from: '*.svg', to: '' },
         { from: 'assets/**', to: '' },
         { from: 'service-worker.js', to: '' },
         { from: 'site.webmanifest', to: '' },
         { from: 'favicon.ico', to: '' },
-        { from: 'apple-touch-icon.png', to: '' },
+        { from: '*.png', to: '' },
         { from: 'robots.txt', to: '' },
       ]),
       new WorkboxPlugin.GenerateSW({  //in prod. mode, not use workbox-config.js

@@ -5,38 +5,33 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://unpkg.com">
 
-    <title>Cardbase.io - Boilerplate for website</title>
+    <title>title</title>
 
-    <meta name="description" content="Speed up your website development with Angular app., PWA and firebase hosting ready boilerplate">
-    <meta name="keywords" content="boilerplate, platform ideas, web application, ready for Firebase hosting" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <!--  TODO: Update w/ a valid description-->
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- pwa capabilities : only for entry page-->
     <link rel="manifest" href="site.webmanifest">
 
     <!-- icons -->
-    <!--    get a transparent logo: https://onlinepngtools.com/create-transparent-png   -->
-    <!--    generate all icons: https://realfavicongenerator.net/   -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#8e24aa">
 
     <!-- ie tiling/pinnig -->
-    <meta name="application-name" content="cardbase.io">
-    <meta name="msapplication-tooltip" content="Boilerplate for your web site">
+    <meta name="application-name" content="app-name">
+    <meta name="msapplication-tooltip" content="A description of what this site does.">
     <meta name="msapplication-navbutton-color" content="#ff0000">
     <meta name="msapplication-window" content="width=768;height=1024">
-    <meta name="msapplication-TileColor" content="#ffffff">
 
     <!-- apple add to homescreen -->
-    <meta name="apple-mobile-web-app-title" content="cardbase.io">
+    <meta name="apple-mobile-web-app-title" content="app-name">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- black-translucent or black -->
 
     <!-- chrome install app -->
-    <meta name="mobile-web-app-capable" content="no">
+    <meta name="mobile-web-app-capable" content="yes">
 
     <!-- startup load on safari. for chrome automatically generated from .webmanifest -->
     <!-- use https://appsco.pe/developer/splash-screens splash screen generator -->
@@ -71,112 +66,106 @@
         <header class="mdc-top-app-bar">
             <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                    <img src="/assets/icons/logo.png" alt="logo" height="48px">
-                    <span class="mdc-top-app-bar__title">Cardbase</span>
+                    <img src="/assets/icons/icon-72x72.png" alt="logo" width="48px">
+                    <span class="mdc-top-app-bar__title">Title</span> 
                 </section>
 
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="navigation">
-                    <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button menuOverride" aria-label="Menu">menu</button>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="menu">
+                    <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Menu">menu</button>
                 </section>
             </div>
         </header>
 
         <section id="jumbotron">
+
             <div class="mdc-card demo-card">
+                
                 <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+ 
                     <div class="demo-card__primary">
-                        <h2 class="demo-card__title mdc-typography mdc-typography--headline2">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        </h2>
+                        <h2 class="demo-card__title mdc-typography mdc-typography--headline2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                         <!-- <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle3"> Aut labore, cupiditate eaque eum voluptatibus harum veritatis adipisci quod. Sint ratione facere est.</h3> -->
+                        
                     </div>
                             
-                    <div class="demo-card__secondary mdc-typography mdc-typography--subtitle3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero possimus et ducimus veritatis vel corporis qui deserunt obcaecati, ea cupiditate vero culpa quod quos, ullam, consequuntur amet. Autem, officiis ipsa?
-                    </div>
+                    <div class="demo-card__secondary mdc-typography mdc-typography--subtitle3">Pariatur, nisi adipisci commodi beatae perferendis ducimus sed natus.</div>                    
                 </div>
                 
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-buttons">
+                        
                         <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised getStarted">Get Started</button>
                     </div>
+
                 </div>
             </div>
+            
+            
         </section>   
 
         <section id="howItWorks">
-            <ul class="mdc-image-list ourCustomerList">
-                <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image"
-                            src="assets/how-it-works/how-it-works.jpg"
-                            alt="How it works">
-                </li>
-            </ul>
+                <ul class="mdc-image-list ourCustomerList">
+                    
+                    <li class="mdc-image-list__item">
+                        <img class="mdc-image-list__image" 
+                                src="https://dummyimage.com/1200x600/fefefe/969396.jpg&text=howitworks"
+                                alt="How it works">
+                    </li>
+                    
+                </ul>        
         </section>
 
         <section id="valueProposition">
             <div class="mdc-card demo-card">
-                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0"
-                         style="display: flex; align-items: center">
-                    <i class="material-icons md-36 secondary-600">
-                        monetization_on
-                    </i>
+                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                        style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
                     
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Lorem, ipsum dolor.</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aut!
-                        </h3>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Decrease Your Costs</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">Sapiente, modi dignissimos dicta quibusdam quod ullam exercitationem minus quaerat tenetur facilis</h3>
                     </div>
                 </div>
+
             </div>
 
             <div class="mdc-card demo-card">
-                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0"
-                     style="display: flex; align-items: center">
-                    <i class="material-icons md-36 secondary-600">
-                        smartphone
-                    </i>
+                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                        style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
                     
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Lorem, ipsum dolor.</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eligendi error!
-                        </h3>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Eliminate Location Boundries</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">Sapiente, modi dignissimos dicta quibusdam quod ullam exercitationem minus quaerat tenetur facilis</h3>
                     </div>
                 </div>
+
             </div>
 
             <div class="mdc-card demo-card">
-                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0"
-                     style="display: flex; align-items: center">
-                    <i class="material-icons md-36 secondary-600">
-                        devices
-                    </i>
+                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                            style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
                     
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Lorem, ipsum dolor.</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, velit laudantium iure amet hic rem neque?
-                        </h3>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Device Free Experience</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">Sapiente, modi dignissimos dicta quibusdam quod ullam exercitationem minus quaerat tenetur facilis</h3>
                     </div>
                 </div>
+
             </div>                       
                     
             <div class="mdc-card demo-card">
-                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0"
-                     style="display: flex; align-items: center">
-                    <i class="material-icons md-36 secondary-600">
-                        bubble_chart
-                    </i>
+                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                    style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
                     
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Lorem, ipsum.</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">
-                            Lorem ipsum dolor sit amet consectetur.
-                        </h3>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">Measure Better</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">Sapiente, modi dignissimos dicta quibusdam quod ullam exercitationem minus quaerat tenetur facilis</h3>
                     </div>
                 </div>
+
             </div>    
         </section>
 
@@ -189,61 +178,66 @@
             <ul class="mdc-image-list ourCustomerList">
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
                 <li class="mdc-image-list__item">
                     <img class="mdc-image-list__image" 
-                         src="assets/our-references/company.png"
-                         alt="company">
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
                 </li>
+                <li class="mdc-image-list__item">
+                    <img class="mdc-image-list__image" 
+                         src="https://dummyimage.com/100x70/2f4f4f/fff/969396.jpg&text=company" 
+                         alt="company logo">
+                </li>                
             </ul>
+
         </section>
 
         <section id="requestDemo">
+
             <div class="mdc-card demo-card">
+                
                 <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+    
                     <div class="demo-card__secondary mdc-typography mdc-typography--body1">
-                        <div class="50">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni similique vero tenetur.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, qui.
-                        </div>
+                        <div class="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id, maiores labore laudantium sequi dolore dolores sunt possimus deserunt esse voluptas soluta tenetur pariatur modi blanditiis deleniti exercitationem nesciunt. Animi!</div>
                     </div>                    
                 </div>
                 
@@ -252,105 +246,81 @@
                         <button class="mdc-button mdc-card__action mdc-card__action--button  learnMore" target="_blank">Learn More</button>
                         <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised requestDemo">Test Drive</button>
                     </div>
+
                 </div>
             </div>
+ 
         </section>  
 
         <section id="pricing">
             <div class="mdc-card demo-card">
                 <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
-                    <div class="mdc-card__media pricingNaming">
-                        Starter
-                    </div>
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                         style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
                     
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">100 X</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">1500$/1 xyz</h3>
-                        <h2 class="demo-card__subtitle mdc-typography mdc-typography--body2">only for 1 abc</h2>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">100 Person</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">50$/1 hour/1 event</h3>
                     </div>
 
                     <div class="demo-card__secondary mdc-typography mdc-typography--body2">
-                        <div style="height: 3.4rem">Fully functional and mostly appropriate for Startups.</div>
-                        <ul>
-                            <li>Up to 100 X can hold the xyz</li>
-                            <li>Best for <mark style="background-color: #ffe380">one time purchases</mark></li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        </ul>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit recusandae laboriosam.
                     </div>
                 </div>
+
             </div>
 
             <div class="mdc-card demo-card">
                 <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
-                    <div class="mdc-card__media pricingNaming">
-                        Basic
-                    </div>
-
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                        style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
+                    
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">1000 X</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">2500$/1 xyz</h3>
-                        <h2 class="demo-card__subtitle mdc-typography mdc-typography--body2">up to 5 abc</h2>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">1000 Person</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">2500$/1 year</h3>
                     </div>
 
                     <div class="demo-card__secondary mdc-typography mdc-typography--body2">
-                        <div style="height: 3.4rem"></div>
-                        <ul>
-                            <li>Up to 1000 X can hold the event</li>
-                            <li>Covers max 5 xyz in a year</li>
-                            <li>Can be purchased max 1 times in a year</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        </ul>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit recusandae laboriosam.
                     </div>
                 </div>
+    
             </div>     
                 
             <div class="mdc-card demo-card">
                 <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
-                    <div class="mdc-card__media pricingNaming">
-                        Big
-                    </div>
-
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                        style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
+                    
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">5000 X</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">10000$/1 xyz</h3>
-                        <h2 class="demo-card__subtitle mdc-typography mdc-typography--body2">up to 20 abc</h2>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">5000 Person</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">10000$/1 year</h3>
                     </div>
 
                     <div class="demo-card__secondary mdc-typography mdc-typography--body2">
-                        <div style="height: 3.4rem">It is suitable for big organizations</div>
-                        <ul>
-                            <li>Up to 5000 X can hold the event</li>
-                            <li>Covers max 20 xyz in a year</li>
-                            <li>Can be purchased max 1 times in a year</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                        </ul>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit recusandae laboriosam.
                     </div>
                 </div>
+    
             </div>   
             
             <div class="mdc-card demo-card">
                 <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
-                    <div class="mdc-card__media pricingNaming">
-                        Mighty
-                    </div>
-
+                    <div class="mdc-card__media mdc-card__media--square demo-card__media" 
+                        style="background-image: url('https://dummyimage.com/300x300/fefefe/969396.jpg&text=value');"></div>
+                    
                     <div class="demo-card__primary">
-                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">No limit</h5>
-                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">25000$/1 xyz</h3>
-                        <h2 class="demo-card__subtitle mdc-typography mdc-typography--body2">up to 100 abc</h2>
+                        <h5 class="demo-card__title mdc-typography mdc-typography--headline5">10000 Person</h5>
+                        <h3 class="demo-card__subtitle mdc-typography mdc-typography--body2">18000$/1 year</h3>
                     </div>
 
                     <div class="demo-card__secondary mdc-typography mdc-typography--body2">
-                        <div style="height: 3.4rem">It is suitable for enterprises</div>
-                        <ul>
-                            <li>No people limit for the X</li>
-                            <li>Covers max 100 X in a year</li>
-                            <li>No purchasing limit</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                        </ul>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit recusandae laboriosam.
                     </div>
                 </div>
-            </div>
+    
+            </div>             
+                    
         </section>  
  
         <footer>
@@ -399,7 +369,7 @@
                                                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
 
                                                 registration.addEventListener('updatefound', function() {
-                                                    let installingWorker = registration.installing;
+                                                    var installingWorker = registration.installing;
 
                                                     console.log('A new service worker is being installed:', installingWorker);
                                                 });
