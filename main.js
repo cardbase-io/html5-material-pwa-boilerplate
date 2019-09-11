@@ -10,7 +10,7 @@ import {MDCRipple} from '@material/ripple/index';
 
 [].slice.call(document.querySelectorAll('.mdc-button'))
                       .forEach(function(ele) {
-                          mdc.ripple.MDCRipple.attachTo(ele);
+                          MDCRipple.attachTo(ele);
                       });
 
 
@@ -31,10 +31,9 @@ const hostName = domainName.substr(domainName.indexOf('.'));
 
 const route = {'development': 'https://core-app-3f127.firebaseapp.com',
               'release': 'https://core-app-91f9d.firebaseapp.com',
-              'demo': 'define a url',
-              'production': 'https://core-app-34b0f.firebaseapp.com',
-              'www': 'https://core-app.cardbase.io',
-              'localhost': 'define a url',
+              'demon': 'define a url', //demo :)
+              'www': 'https://core-app.cardbase.io', // production
+              'localhost': 'https://core-app-3f127.firebaseapp.com',  // route 2 development, why not
               'learnMore': '/learn-more-about-......html'      //define naming b/w your idea and SEO
               }
 
@@ -55,15 +54,11 @@ document.querySelector('.getStarted')
 
               window.open(route.release); 
             }
-            else if(domainName.startsWith('demo')) {
+            else if(domainName.startsWith('demo') ||
+                    domainName.startsWith('demon')) {
               console.log('environment = demo');
 
               window.open(route.demo);
-            }
-            else if(domainName.startsWith('production')) {
-              console.log('environment = production');
-
-              window.open(route.production);
             }
             else if(domainName.startsWith('www')) {
               console.log('environment = production');
@@ -71,7 +66,7 @@ document.querySelector('.getStarted')
               window.open(route.www);
             }
             else if(domainName.startsWith('localhost')) {
-              console.log('environment = localhost');
+              console.log('environment = localhost, core-app will be routed to development env');
 
               window.open(route.localhost);
             }

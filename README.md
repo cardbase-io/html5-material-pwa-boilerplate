@@ -39,13 +39,16 @@ After fork,
             - @babel/core
             - babel-loader: Compiles JavaScript files using babel
             - @babel/preset-env: Preset for compiling es2015
-    - `npm run scss` to generate css files.
     - `npm install -g workbox-cli`, then `workbox generateSW workbox-config.js` to update service-worker.js locally. [Read more](https://developers.google.com/web/tools/workbox/modules/workbox-cli)
 
 
 ## How to Customize
 
-1. Change `material.theme.scss` for hange variables w/ your colors, shape requirements etc.
+1. Use `material.theme.scss` to change variables w/ your colors, shape requirements etc.
+2. Prepare assets
+   - get a transparent logo: https://onlinepngtools.com/create-transparent-png
+   - then, generate all icons: https://realfavicongenerator.net/ or use their cli `npm install -g cli-real-favicon`
+   - then, generate apple splash screens: https://appsco.pe/developer/splash-screens
 2. then, start changing index.html and creating new html files if needed!
 
 - webpack.config.js: webpack configuration for scss-2-css, es2015js-2-js, copy some files, generate html files etc...
@@ -56,9 +59,13 @@ After fork,
     - material.components.scss : specific to the material components
 - main.js: access components w/ `querySelectorAll('.className')` then do whatever you want!. Webpack converts it into **bundle.js**
     - It has, routing table for dev, release, demo and prod redirections. So change w/ your own urls. And here, naming is critical. It parses domainNames to route.
-- assets/icons: Change w/ your own.
-- favicon.ico: Change w/your own.
-- apple-touch-icon.png: Change w/your own.
+- icons : `npm install -g cli-real-favicon` to generate all favicons for ms, ios, android. You just need 1 high resolution transparent .png file
+    - logo-transparent.png **master png file**
+    - favicon-description.json : parameters for favicon generation. Change w/ your values
+    - `favicon-description-generate.sh` : generation script. creates `.xyz` folder and all images. Copy them manually to related paths!
+    - assets/icons/*.png
+    - favicon*
+    - apple-touch*
 - dist/: `npm run build` creates for deployments. Then `copy-webpack-plugin` to copy some files into it. This part is critical for firbase, cause it need to see 404.html and index.html and related files to them!
     - bundle.js
     - bundle.css
